@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+  background: linear-gradient(90deg, #4a0e8f, #8a35d1);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.meme-form {
+  display: flex;
+  padding: 20px;
+}
+
+.meme-form input {
+  flex: 1;
+  margin-right: 15px;
+  padding: 15px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.meme-form input:focus {
+  border-color: #6a11cb;
+}
+
+.meme-form button {
+  padding: 15px 30px;
+  background-color: #6a11cb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.meme-form button:hover {
+  background-color: #2575fc;
+}
+
+.meme {
+  position: relative;
+  margin: 20px auto;
+  max-width: 500px;
+  max-height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.meme img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.meme h2 {
+  position: absolute;
+  width: 100%; 
+  text-align: center;
+  left: 0;
+  padding: 0 10px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px #000;
+  margin: 0;
+}
+
+.meme .top {
+  top: 10px;
+}
+
+.meme .bottom {
+  bottom: 10px; 
+}
+
+
+@media (max-width: 600px) {
+  .meme h2 {
+    font-size: 1.5em;
+  }
+}
+
+.header-container {
+  background: linear-gradient(90deg, #4a0e8f, #8a35d1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #ff4b2b;
+}
+
+.header-img {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-title {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  letter-spacing: 2px;
+}
